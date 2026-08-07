@@ -253,7 +253,7 @@ also changes the observed classification accuracy.
 numpy-logistic-regression-from-scratch/
 │
 ├── README.md
-└── lr_log_regression.ipynb
+└── np_log_regression.ipynb
 ```
 
 ------------------------------------------------------------------------
