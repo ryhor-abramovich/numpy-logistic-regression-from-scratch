@@ -62,23 +62,11 @@ The bias term is deliberately excluded from regularization.
 
 Applying the chain rule gives the gradients used for parameter updates:
 
-$$
-\frac{\partial J}{\partial W}
-=
-\frac{1}{n}X^T(A-Y)
-+
-\frac{\alpha}{n}W
-$$
+$\frac{\partial J}{\partial W} = \frac{1}{n}X^T(A-Y) + \frac{\alpha}{n}W$
 
 and
 
-$$
-\frac{\partial J}{\partial b}
-=
-\frac{1}{n}
-\sum_{i=1}^{n}(A_i-Y_i)
-$$
-
+$\frac{\partial J}{\partial b} = \frac{1}{n}\sum_{i=1}^{n}(A_i-Y_i)$
 These gradients are implemented directly with NumPy matrix operations.
 
 ------------------------------------------------------------------------
